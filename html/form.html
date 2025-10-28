@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form & Table</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
     <!-- Table :  A structred way to display data-->
-     <h2>Table</h2>
+     <h2 style="color:red">Table</h2>
      <table border="1" width="250px">
         <thead>
         <tr>
@@ -18,23 +24,59 @@
         </thead>
         <tbody>
             <tr>
-                <td>Hafnawi</td>
-                <td>24</td>
-                <td>Tunis</td>
+                <td colspan="2">Hafnawi</td>
+                <!-- <td>24</td> -->
+                <td rowspan="2">Tunis</td>
             </tr>
             <tr>
                 <td>Philips</td>
                 <td>40</td>
-                <td>Texas</td>
+                <!-- <td>Texas</td> -->
             </tr>
 
         </tbody>
      </table>
 
      <!-- Form -->
-      <h2>Form Inputs:</h2>
+      <h2 id="h2s">Form Inputs:</h2>
       <form action="">
-        
+        <!-- text input field -->
+         <label for="">First name :</label>
+         <input type="text" name="" id=""><br><br>
+
+         <!-- email input type -->
+          <label for="">Email:</label>
+          <input placeholder="example@dhdkd.com" type="email" name="" id=""><br><br>
+<!-- password input type  -->
+ <label for="">Password</label>
+ <input required type="password" name="" id=""> <br><br>
+ <!--  Date input -->
+   <label for="">BirthDate:</label>
+   <input type="date" name="" id=""><br><br>
+   <!-- Radio button -->
+    <label for="">Gender :</label>
+    <label for="">Male</label>
+    <input type="radio" name="gdr" id="">
+    <label for="">Female</label>
+    <input type="radio" name="gdr" id=""><br><br>
+    <label for="">Color</label>
+    <input type="color" name="" id=""><br></br>
+    <!-- select input / drop down -->
+     <label for="">Select ur favourite snack</label>
+     <select name="" id="">
+        <option value="">Gaufrette</option>
+        <option value="">Mars</option>
+     </select> <br><br>
+
+     <!-- File upload input  -->
+      <label for="">Image</label>
+      <input type="file" name="" id="">
+      <br><br>
+      <!-- range input -->
+       <label for="">Select from 1 to 100</label>
+       <input type="range" name="" id="">
+       <br><br>
+       <!--  -->
       </form>
 </body>
 </html>
